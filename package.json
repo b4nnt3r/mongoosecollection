@@ -1,0 +1,25 @@
+{
+  "name": "collection_mongoose",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b4nnt3r/mongoosecollection.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b4nnt3r/mongoosecollection/issues"
+  },
+  "homepage": "https://github.com/b4nnt3r/mongoosecollection#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.8",
+    "mustache-express": "^1.2.5"
+  }
+}

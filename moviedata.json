@@ -1,0 +1,61 @@
+[{
+    "title": "Hook",
+    "year": "1991",
+    "director": {
+      "firstName": "Steven",
+      "lastName": "Spielerg"
+    },
+    "boxoffice": "300,900,000",
+    "genre": ["adventure", "family", "fantasy", "comedy"],
+    "synopsis": "In his new life, he is known as Peter Banning, a successful but unimaginative and workaholic corporate lawyer with a wife (Wendy's granddaughter) and two children. However, when Captain Hook, the enemy of his past, kidnaps his children, he returns to Neverland in order to save them.",
+    "format": ["dvd", "bluray", "vhs"]
+  },
+  {
+    "title": "Fight Club",
+    "year": "1999",
+    "director": {
+      "firstName": "Arnon",
+      "lastName": "Milchan"
+    },
+    "boxoffice": "100,000,000",
+    "genre": ["crime"],
+    "synopsis": "A depressed man (Edward Norton) suffering from insomnia meets a strange soap salesman named Tyler Durden (Brad Pitt) and soon finds himself living in his squalid house after his perfect apartment is destroyed. The two bored men form an underground club with strict rules and fight other men who are fed up with their mundane lives. Their perfect partnership frays when Marla (Helena Bonham Carter), a fellow support group crasher, attracts Tyler's attention.",
+    "format": ["dvd", "bluray", "vhs"]
+  },
+  {
+    "title": "Kill Bill: Vol. 1",
+    "year": "2003",
+    "director": {
+      "firstName": "Quentin",
+      "lastName": "Tarantino"
+    },
+    "boxoffice": "70,00,000",
+    "genre": ["Action", "Crime", "Thriller"],
+    "synopsis": "A former assassin, known simply as The Bride (Uma Thurman), wakes from a coma four years after her jealous ex-lover Bill (David Carradine) attempts to murder her on her wedding day. Fueled by an insatiable desire for revenge, she vows to get even with every person who contributed to the loss of her unborn child, her entire wedding party, and four years of her life. After devising a hit list, The Bride sets off on her quest, enduring unspeakable injury and unscrupulous enemies.",
+    "format": ["dvd", "bluray"]
+  },
+  {
+    "title": "Kill Bill: Vol. 2",
+    "year": "2004",
+    "director": {
+      "firstName": "Quentin",
+      "lastName": "Tarantino"
+    },
+    "boxoffice": "66,000,000",
+    "genre": ["Action", "Crime", "Thriller"],
+    "synopsis": "The Bride (Uma Thurman) picks up where she left off in volume one with her quest to finish the hit list she has composed of all of the people who have wronged her, including ex-boyfriend Bill (David Carradine), who tried to have her killed four years ago during her wedding to another man. Leaving several dead in her wake, she eventually tracks down Bill in Mexico. Using skills she has learned during her assassin career, she attempts to finish what she set out to do in the first place.",
+    "format": ["dvd", "bluray"]
+  },
+  {
+    "title": "Interstellar",
+    "year": "2014",
+    "director": {
+      "firstName": "Christopher",
+      "lastName": "Nolan"
+    },
+    "boxoffice": "675,100,000",
+    "genre": ["Mystery", "Science-Fiction"],
+    "synopsis": "In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole. But first, Brand must send former NASA pilot Cooper (Matthew McConaughey) and a team of researchers through the wormhole and across the galaxy to find out which of three planets could be mankind's new home.",
+    "format": ["dvd", "bluray"]
+  }
+]

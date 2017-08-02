@@ -41,30 +41,31 @@ app.get('/', function(request, response) {
 
 app.post('/', function(request, response) {
 
-
-request.assert(moviesSchema);
-const Movie = mongoose.model('Movie', moviesSchema);
-let movie = new Movie({title: "Stay"});
-movie.genre.push("Drama");
-
-movie.save().then(function(){
-console.log('movie saved');
-}).catch(function(){
-  console.log("Mongo couldn\'t save movie");
-
   request.assert(moviesSchema);
-  request.getValidationResult().then(function(results) {
-  if (results.isEmpty()) {
-    response.render('answers', {
-      answers: request.body
+  const Movie = mongoose.model('Movie', moviesSchema);
+  let movie = new Movie({
+    title: "Stay"
+  });
+  movie.genre.push("Drama");
+
+  movie.save().then(function() {
+    console.log('movie saved');
+  }).catch(function() {
+    console.log("Mongo couldn\'t save movie");
+
+    request.assert(moviesSchema);
+    request.getValidationResult().then(function(results) {
+      if (results.isEmpty()) {
+        response.render('answers', {
+          answers: request.body
+        });
+      } else {
+        response.render('form', {
+          errors: results.array()
+        });
+      }
     });
-  } else {
-    response.render('form', {
-      errors: results.array()
-    });
-  }
-});
-});
+  });
 });
 
 app.listen(3000, function() {

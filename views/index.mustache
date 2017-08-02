@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Decent Movies</title>
+  <link rel="stylesheet" href="style.css" / </head>
+
+  <body>
+
+    <div class="container">
+      {{ #movies }}
+      <div class="results">
+=
+          <p>{{ title }}</p>
+          <p>{{ year }}</p>
+          <p>{{ director.firstName }}
+          {{ director.lastName }}</p>
+          <p>{{ boxoffice }}</p>
+          <p>{{ genre }}</p>
+          <p>{{ synopsis }}</p>
+          <p>{{ format }}</p>
+
+      </div>
+      {{ /movies }}
+
+    </div>
+  </body>
+
+</html>

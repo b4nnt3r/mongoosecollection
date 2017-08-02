@@ -7,20 +7,29 @@
   <link rel="stylesheet" href="style.css" / </head>
 
   <body>
-
     <div class="container">
+      <form class="addEntry" action="/" method="post">
+        <div class="results">
+          <input type="text" placeholder="enter title (required)" />
+          <input type="text" placeholder="enter year" />
+          <input type="text" placeholder="enter director" />
+          <input type="text" placeholder="enter boxoffice"/>
+          <input type="text" placeholder="enter genre(s)": />
+          <input type="text" placeholder="enter summary" />
+          <input type="text" placeholder="types available" />
+          <button type="submit" name="button">Add Entry</button>
+
+        </div>
+      </form>
       {{ #movies }}
       <div class="results">
-=
-          <p>{{ title }}</p>
-          <p>{{ year }}</p>
-          <p>{{ director.firstName }}
-          {{ director.lastName }}</p>
-          <p>{{ boxoffice }}</p>
-          <p>{{ genre }}</p>
-          <p>{{ synopsis }}</p>
-          <p>{{ format }}</p>
-
+        <p>title: {{ title }}</p>
+        <p>year: {{ year }}</p>
+        <p>director: {{ director.firstName }} {{ director.lastName }}</p>
+        <p>boxoffice: {{ boxoffice }}</p>
+        <p>genre: {{ genre }}</p>
+        <p>summary: {{ synopsis }}</p>
+        <p>available in: {{ format }}</p>
       </div>
       {{ /movies }}
 

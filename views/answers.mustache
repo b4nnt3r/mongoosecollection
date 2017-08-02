@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+
+  <title>answers</title>
+</head>
+
+<body>
+  {{ #answers }}
+  <p>title: {{ title }}</p>
+  <p>year: {{ year }}</p>
+  <p>director: {{ director.firstName }} {{ director.lastName }}</p>
+  <p>boxoffice: {{ boxoffice }}</p>
+  <p>genre: {{ genre }}</p>
+  <p>summary: {{ synopsis }}</p>
+  <p>available in: {{ format }}</p>
+  {{ /answers }}
+</body>
+
+</html>

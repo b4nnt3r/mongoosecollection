@@ -52,6 +52,7 @@ console.log('movie saved');
 }).catch(function(){
   console.log("Mongo couldn\'t save movie");
 
+  request.assert(moviesSchema);
   request.getValidationResult().then(function(results) {
   if (results.isEmpty()) {
     response.render('answers', {

@@ -18,11 +18,11 @@ app.engine('mustache', mustacheExpress());
 app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
 
-app.use(express.static('public'))
-app.use(expressValidator())
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
+// app.use(express.static('public'))
+// app.use(expressValidator())
+// app.use(bodyParser.urlencoded({
+//   extended: true
+// }));
 
 let findAll = function(db, callback) {
   let collection = db.collection('movies');

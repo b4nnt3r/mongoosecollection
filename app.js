@@ -13,13 +13,16 @@ const app = express();
 
 mongoose.connect('mongodb://localhost:27017/moviesdb');
 
-app.use(express.static('public'))
-app.use(expressValidator())
-
 app.engine('mustache', mustacheExpress());
 
 app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
+
+app.use(express.static('public'))
+app.use(expressValidator())
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 let findAll = function(db, callback) {
   let collection = db.collection('movies');
@@ -36,6 +39,28 @@ app.get('/', function(request, response) {
         movies: result
       });
     });
+  });
+});
+
+app.post('/createMovie', function(request, response) {
+  let newMovie = {
+    title: request.body.title,
+    year: request.body.year,
+    director: request.body.director,
+    boxoffice: request.body.boxoffice,
+    genre: request.body.genre,
+    synopsis: request.body.synopsis,
+    format: request.body.types
+  }
+
+  MongoClient.connect('mongodb://localhost:27017/tv', function(err, db) {
+    if (err) {
+      console.log(err);
+    } else {
+      const collection = db.collection('movies');
+      collection.save(newMovie)
+      response.redirect('/');
+    };
   });
 });
 
